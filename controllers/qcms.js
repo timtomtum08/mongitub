@@ -7,6 +7,13 @@ const displayQcms = (req, res) => {
     res.render('qcms', {qcms: qcms});
 };
 
+const displayQcmDetailed = (req, res) => {
+    const id = Number(req.params.qcmid);
+    console.log(id);
+    const qcm = qcms.find((element) => element.id === id);
+    res.render('qcm', {qcm});
+}
+
 const displayQcmJson = (req, res) => {
     res.json({qcms});
 }
@@ -25,4 +32,4 @@ const createNewForm = (req, res) => {
     res.redirect('/qcms');
 };
 
-module.exports = {displayQcms, displayFormQcm, createNewForm, displayQcmJson};
+module.exports = {displayQcms, displayFormQcm, createNewForm, displayQcmJson, displayQcmDetailed};
