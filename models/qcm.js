@@ -45,6 +45,11 @@ class Qcm {
     get nbpoints() {
         return this.#nbpoints;
     }
+
+    toJSON(key) {
+        console.log(key);
+        return {id: this.#id, name: this.#name};
+    }
 }
 
 module.exports = Qcm;
