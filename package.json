@@ -1,9 +1,10 @@
 {
   "name": "qcm-backend-express-tp",
   "version": "1.0.0",
-  "description": "--- title:  |     ![](public/argonaultes-logo.png){width=1in}\\textsuperscript{\\textcopyright}\\break     QCM Backend ExpressJS author: - Gaël Roustan (Argonaultes) logo: 'public/argonaultes-logo.png' date: \"2023-2024\" keywords: [backend,framework,javascript,express,node] abstract: |   Ce document présente les étapes détaillées pour une première utilisation du framework ExpressJS",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "npx nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
