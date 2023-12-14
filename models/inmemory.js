@@ -1,5 +1,6 @@
 // importer la classe Qcm
 const Qcm = require('./qcm');
+const Question = require('./question');
 
 // remplacer les simples chaines de caracteres par des instances de la classe Qcm
 const qcms = [
@@ -7,6 +8,7 @@ const qcms = [
     new Qcm({ id: 1, name: 'Framework Frontend', nbpoints: 20, subject: 'Angular' }),
     new Qcm({ id: 2, name: 'Framework Backend', nbpoints: 10, subject: 'Express' }),
 ];
+
 
 
 const addQcm = (rawObject) => {
