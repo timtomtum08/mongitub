@@ -12,4 +12,4 @@ class Question {
 
 }
 
-module.exports = Qcm;
+module.exports = Question;

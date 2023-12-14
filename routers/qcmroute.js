@@ -20,6 +20,8 @@ router.get('/new', displayFormQcm); //handler
 
 router.post('/new', createNewForm);
 
+router.get('/qcmid/question' , getQuestion);
+
 
 //FIN DES ROUTES
 
